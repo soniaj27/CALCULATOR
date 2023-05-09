@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+:root{
+    --calBg:rgb(169, 94, 255);
+    --bodybg:#393939;
+    --white:#fff;
+    --black:#000;
+    --btnBg:##D9AD168F;
+
+}
+body{
+    background-color:var(--bodybg) ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+}
+.calculator-div{
+    background-color: var(--calBg);
+    width: auto;
+    border-radius: 18px;
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
+    padding: 7%;
+}
+.calculator-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15%;
+  } 
+  .calculator-heading-text {
+    font-size: x-large;
+  }
+  .calculator-screen-div {
+    width: 100%;
+    height: 150px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 16px;
+    margin: 10% 0;
+    box-shadow: 1px 1px 50px rgba(0,0,0,0.2),1px 1px 50px rgba(0,0,0,0.2);
+    font-size: xxx-large;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 1%;
+    border: none;
+    text-align: end;
+  }
+  input{
+    outline: none;
+  }
+  .calculator-button-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .button-div {
+    box-shadow: 20px 20px 50px rgb(18, 142, 134);
+    width: 73px;
+    height: 68px;
+    background: var(--btnBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px;
+    
+  }
+
+  .button-div.buttion-div-button-id-16 {
+    grid-area: span 2;
+    height: 125px;
+    border-radius: 30px 0px;
+  }
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
